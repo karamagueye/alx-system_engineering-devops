@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Contents of /etc/passwd and /etc/hosts:"
 cat /etc/passwd /etc/hosts
 
 
