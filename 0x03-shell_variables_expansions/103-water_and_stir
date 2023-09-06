@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Get the values of WATER and STIR from environment variables
+water="$WATER"
+stir="$STIR"
+
+# Check if either variable is empty or not set
+if [ -z "$water" ] || [ -z "$stir" ]; then
+  echo "Error: WATER and/or STIR variables are not set."
+  exit 1
+fi
+
+# Perform the addition
+result=$((water + stir))
+
+# Convert the result to base bestchol (assuming base bestchol is base 10)
+bestchol_result="$result"
+
+# Print the result
+echo "Result in base bestchol: $bestchol_result"
+
