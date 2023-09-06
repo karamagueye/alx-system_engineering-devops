@@ -1,2 +1,2 @@
 #!/bin/bash
-prinf '%.2f\n' §NUN
+printf '%.2f\n' $NUN
