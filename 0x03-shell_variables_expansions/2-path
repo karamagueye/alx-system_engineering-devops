@@ -1,4 +1,4 @@
 #!/bin/bash
-echo 'export PATH="$PATH:/action"' >>
+ecport PATH=§PATH:/action
 
 
