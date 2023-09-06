@@ -1,18 +1,6 @@
+ 
+
 #!/bin/bash
-
-# Sépare la variable PATH en utilisant le délimiteur ":" et compte les éléments
-IFS=":" read -ra PATH_ARRAY <<< "$PATH"
-count=0
-
-# Parcourt chaque élément du tableau
-for element in "${PATH_ARRAY[@]}"; do
-  # Vérifie si l'élément est un répertoire non vide
-  if [ -n "$element" ]; then
-    count=$((count + 1))
-  fi
-done
-
-# Affiche le nombre de répertoires
-echo "$count"
+echo "$PATH" | tr -s ':' '\n' | grep -vc '^$'
 
 
