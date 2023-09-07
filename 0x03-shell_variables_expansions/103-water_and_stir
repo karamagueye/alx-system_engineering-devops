@@ -1,21 +1,30 @@
 #!/bin/bash
 
-# Get the values of WATER and STIR from environment variables
-water="$WATER"
-stir="$STIR"
+# Récupérer les valeurs des variables d'environnement WATER et STIR
+WATER="$WATER"
+STIR="$STIR"
 
-# Check if either variable is empty or not set
-if [ -z "$water" ] || [ -z "$stir" ]; then
-  echo "Error: WATER and/or STIR variables are not set."
-  exit 1
-fi
+# Convertir de base water à base 10
+water_decimal=$(echo "$WATER" | tr -d 'a-z' | tr -d '.' | rev | awk '{s=0} {for (i=1; i<=length; i++) s+=ord(substr($0, i, 1))-96} END {print s}')
 
-# Perform the addition
-result=$((water + stir))
+# Convertir de base stir à base 10
+stir_decimal=$(echo "$STIR" | tr -d 'a-z' | tr -d '.' | rev | awk '{s=0} {for (i=1; i<=length; i++) s+=ord(substr($0, i, 1))-96} END {print s}')
 
-# Convert the result to base bestchol (assuming base bestchol is base 10)
-bestchol_result="$result"
+# Additionner les valeurs en base 10
+result_decimal=$((water_decimal + stir_decimal))
 
-# Print the result
-echo "Result in base bestchol: $bestchol_result"
+# Convertir de base 10 à base bestchol
+result_bestchol=""
+while [ "$result_decimal" -gt 0 ]; do
+    remainder=$((result_decimal % 11))
+    if [ "$remainder" -eq 10 ]; then
+        result_bestchol="a$result_bestchol"
+    else
+        result_bestchol="$remainder$result_bestchol"
+    fi
+    result_decimal=$((result_decimal / 11))
+done
+
+# Afficher le résultat
+echo "$result_bestchol"
 
