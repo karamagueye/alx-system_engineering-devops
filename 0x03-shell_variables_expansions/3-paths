@@ -1,5 +1,5 @@
 
 #!/bin/bash
-echo "$PATH" | tr -s ':' '\n' | grep -vc '^$'
+echo $PATH" | tr -s ':' '\n' | wc -l|
 
 
