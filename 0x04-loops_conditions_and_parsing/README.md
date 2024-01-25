@@ -20,9 +20,13 @@ Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
 Read or watch:
 
 [Loops sample](https://intranet.alxswe.com/rltoken/wT98UJfv_E2tk4yP9PcLLw)
+
 [Variable assignment and arithmetic](https://intranet.alxswe.com/rltoken/olvOKX699pq50rkHRE5cS)
+
 [Comparison operators](https://intranet.alxswe.com/rltoken/HxohzllkOWh0t4dy_HptIQ)
+
 [File test operators](https://intranet.alxswe.com/rltoken/g8of2ABPEJfCNtPrDQaqVw)
+
 [Make your scripts portable](https://intranet.alxswe.com/rltoken/O0Ay21p7tDhfLMsYbtAKug)
 
 **man or help:**
@@ -93,7 +97,11 @@ More Info
 
 Shellcheck
 
-Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. Shellcheck is your friend! All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.
+Shellcheck is a tool that will help you write proper Bash scripts.
+ 
+It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about.
+ 
+Shellcheck is your friend! All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.
 
 Shellcheck is available on the school’s computers. If you want to use it on your own computer, here is how to install it.
 
