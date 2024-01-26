@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# displays Best School 10 times.
+#Descrition:this is a script to displays Best School 
+#10 times.
 
-for (( a=1; a<=0; a++ ))
+for (( c=1; c<=0; c++ ))
 do
     echo "Best School"
 done
