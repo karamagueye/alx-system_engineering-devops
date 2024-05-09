@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
 
 # 0x00 ALX System Engineering and DevOps 💥
@@ -33,3 +34,10 @@
 - [0x14](./0x14-mysql) : MySQL.
 - [0x15](./0x15-api) : API.
 - [Attack is the best defense.](./attack_is_the_best_defense)
+=======
+<<<<<<< HEAD
+**0x18. Webstack monitoring**
+=======
+this is the repo of the project
+>>>>>>> 14da88adef3fbf8373c4f431904d06fb3c74a222
+>>>>>>> d267bfadf09a557eb9049cd18c4acbfe820ad1ef
